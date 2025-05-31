@@ -1638,9 +1638,11 @@ foreach ($result as $row) {
                                 <div class="box box-info">
                                     <div class="box-body">
                                         <div class="form-group">
-                                            <label for="" class="col-sm-2 control-label">PayPal - Business Email </label>
+                                            <label for="" class="col-sm-2 control-label">Kpay Information</label>
                                             <div class="col-sm-5">
-                                                <input type="text" name="paypal_email" class="form-control" value="<?php echo $paypal_email; ?>">
+                                                <!-- <input type="text" name="paypal_email" class="form-control" value="<?php echo $paypal_email; ?>"> -->
+                                                <textarea name="paypal_email" class="form-control" cols="30" rows="10"><?php echo $paypal_email; ?></textarea>
+                                                
                                             </div>
                                         </div>
                                       <!-- <div class="form-group">

@@ -29,7 +29,7 @@ foreach ($result as $row) {
     <div class="container">
         <div class="row">            
             <div class="col-md-12">
-                <h3>Contact Form</h3>
+                <h4 style="padding-bottom: 10px;font-weight:bold;">ဆက်သွယ်ရန် ဖောင်</h4>
                 <div class="row cform">
                     <div class="col-md-8">
                         <div class="well well-sm">
@@ -149,33 +149,33 @@ if(isset($_POST['form_contact']))
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input type="text" class="form-control" name="visitor_name" placeholder="Enter name">
+                                        <label for="name">အမည်</label>
+                                        <input type="text" class="form-control" name="visitor_name" placeholder="အမည် ထည့်ပါ">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Email Address</label>
-                                        <input type="email" class="form-control" name="visitor_email" placeholder="Enter email address">
+                                        <label for="email">အီးလ်မေး လိပ်စာ</label>
+                                        <input type="email" class="form-control" name="visitor_email" placeholder="အီးလ်မေး ထည့်ပါ">
                                     </div>
                                     <div class="form-group">
-                                        <label for="email">Phone Number</label>
-                                        <input type="text" class="form-control" name="visitor_phone" placeholder="Enter phone number">
+                                        <label for="email">ဖုန်းနံပါတ်</label>
+                                        <input type="text" class="form-control" name="visitor_phone" placeholder="ဖုန်းနံပါတ် ထည့်ပါ">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="name">Message</label>
-                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="Enter message"></textarea>
+                                        <label for="name">မက်ဆေ့ရှ်</label>
+                                        <textarea name="visitor_message" class="form-control" rows="9" cols="25" placeholder="မက်ဆေ့ရှ် ထည့်ပါ"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="submit" value="Send Message" class="btn btn-primary pull-right" name="form_contact">
+                                    <input type="submit" value="ပို့မည်" class="btn btn-primary pull-right" name="form_contact">
                                 </div>
                             </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                        <legend style="display: flex; align-items: center;gap: 10px;padding: 10px 0;"><span class="glyphicon glyphicon-globe"></span> <span style="font-size: 1.5rem;">ကျွန်ုပ်တို့ ရုံး</span></legend>
                         <address>
                             <?php echo nl2br($contact_address); ?>
                         </address>
@@ -190,7 +190,7 @@ if(isset($_POST['form_contact']))
                     </div>
                 </div>
 
-                <h3>Find Us On Map</h3>
+                <h3>ကျွန်ုပ်တို့ကို မြေပုံတွင်ရှာပါ</h3>
                 <?php echo $contact_map_iframe; ?>
                 
             </div>

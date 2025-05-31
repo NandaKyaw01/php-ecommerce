@@ -222,11 +222,11 @@ if($success_message != '') {
                            ?>
                         </td>
                         <td>
-                        	<?php if($row['payment_method'] == 'PayPal'): ?>
+                        	<?php if($row['payment_method'] == 'KPay'): ?>
                         		<b>Payment Method:</b> <?php echo '<span style="color:red;"><b>'.$row['payment_method'].'</b></span>'; ?><br>
                         		<b>Payment Id:</b> <?php echo $row['payment_id']; ?><br>
                         		<b>Date:</b> <?php echo $row['payment_date']; ?><br>
-                        		<b>Transaction Id:</b> <?php echo $row['txnid']; ?><br>
+                        		<b>Transaction Information:</b> <?php echo $row['bank_transaction_info']; ?><br>
                         	<?php elseif($row['payment_method'] == 'Stripe'): ?>
                         		<b>Payment Method:</b> <?php echo '<span style="color:red;"><b>'.$row['payment_method'].'</b></span>'; ?><br>
                         		<b>Payment Id:</b> <?php echo $row['payment_id']; ?><br>

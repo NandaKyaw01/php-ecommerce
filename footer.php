@@ -166,7 +166,7 @@ foreach ($result as $row) {
 	$(document).ready(function () {
 		advFieldsStatus = $('#advFieldsStatus').val();
 
-		$('#paypal_form').hide();
+		$('#kpay_form').hide();
 		$('#stripe_form').hide();
 		$('#bank_form').hide();
 
@@ -176,8 +176,8 @@ foreach ($result as $row) {
             	$('#paypal_form').hide();
 				$('#stripe_form').hide();
 				$('#bank_form').hide();
-            } else if ( advFieldsStatus == 'PayPal' ) {
-               	$('#paypal_form').show();
+            } else if ( advFieldsStatus == 'KPay' ) {
+               	$('#kpay_form').show();
 				$('#stripe_form').hide();
 				$('#bank_form').hide();
             } else if ( advFieldsStatus == 'Stripe' ) {
@@ -185,7 +185,7 @@ foreach ($result as $row) {
 				$('#stripe_form').show();
 				$('#bank_form').hide();
             } else if ( advFieldsStatus == 'Bank Deposit' ) {
-            	$('#paypal_form').hide();
+            	$('#kpay_form').hide();
 				$('#stripe_form').hide();
 				$('#bank_form').show();
             }

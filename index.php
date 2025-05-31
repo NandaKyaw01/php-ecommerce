@@ -233,7 +233,7 @@ foreach ($result as $row)
                                         </div>
                                     </div>
                                 <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">အသေးစိတ်ကြည့်မည်</a></p>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -361,7 +361,7 @@ foreach ($result as $row)
                                         </div>
                                     </div>
                                 <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">အသေးစိတ်ကြည့်မည်</a></p>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -492,7 +492,7 @@ foreach ($result as $row)
                                         </div>
                                     </div>
                                 <?php else: ?>
-                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">အသေးစိတ်ကြည့်မည်</a></p>
                                 <?php endif; ?>
                             </div>
                         </div>

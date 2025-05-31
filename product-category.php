@@ -256,7 +256,10 @@ if( !isset($_REQUEST['id']) || !isset($_REQUEST['type']) ) {
                                                         </div>
                                                     </div>
                                                 <?php else: ?>
-                                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo LANG_VALUE_154; ?></a></p>
+                                                    <p><a href="product.php?id=<?php echo $row['p_id']; ?>">
+                                                        <!-- <?php echo LANG_VALUE_154; ?> -->
+                                                         အသေးစိတ်ကြည့်မည်
+                                                    </a></p>
                                                 <?php endif; ?>
                                             </div>
                                         </div>
