@@ -88,10 +88,10 @@ if(isset($_POST['form2'])) {
                 <div class="box box-info">
                     <div class="box-body">
                         <div class="form-group">
-                            <label for="" class="col-sm-2 control-label">Select Country <span>*</span></label>
+                            <label for="" class="col-sm-2 control-label">Select State <span>*</span></label>
                             <div class="col-sm-4">
                                 <select name="country_id" class="form-control select2">
-                                    <option value="">Select a country</option>
+                                    <option value="">Select a state</option>
                                     <?php
                                     $statement = $pdo->prepare("SELECT * FROM tbl_country ORDER BY country_name ASC");
                                     $statement->execute();
@@ -159,8 +159,8 @@ if(isset($_POST['form2'])) {
 			<thead>
 			    <tr>
 			        <th>SL</th>
-			        <th>Country Name</th>
-                    <th>Country Amount</th>
+			        <th>State Name</th>
+                    <th>Shipping Amount</th>
 			        <th>Action</th>
 			    </tr>
 			</thead>
@@ -194,14 +194,14 @@ if(isset($_POST['form2'])) {
         </div>
       </div> 
 
-      <h4 style="background: #dd4b39;color:#fff;padding:10px 20px;">NB: If a country does not exist in the above list, the following "Rest of the World" shipping cost will be applied upon that.</h4>
+      <h4 style="background: #dd4b39;color:#fff;padding:10px 20px;">NB: If a state does not exist in the above list, the following "Rest of the state" shipping cost will be applied upon that.</h4>
 
 </section>
 
 
 <section class="content-header">
     <div class="content-header-left">
-        <h1>Shipping Cost (Rest of the world)</h1>
+        <h1>Shipping Cost (Rest of the Country)</h1>
     </div>
 </section>
 

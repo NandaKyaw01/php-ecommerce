@@ -6,7 +6,7 @@ if(isset($_POST['form1'])) {
 
     if(empty($_POST['country_id'])) {
         $valid = 0;
-        $error_message .= "You must have to select a country<br>";
+        $error_message .= "You must have to select a state<br>";
     } else {
 		// Duplicate Country checking
     	// current Country name that is in the database
@@ -95,10 +95,10 @@ foreach ($result as $row) {
             <div class="box box-info">
                 <div class="box-body">
                     <div class="form-group">
-                        <label for="" class="col-sm-2 control-label">Select Country <span>*</span></label>
+                        <label for="" class="col-sm-2 control-label">Select State <span>*</span></label>
                         <div class="col-sm-4">
                             <select name="country_id" class="form-control select2">
-                                <option value="">Select a country</option>
+                                <option value="">Select a state</option>
                                 <?php
                                 $statement = $pdo->prepare("SELECT * FROM tbl_country ORDER BY country_name ASC");
                                 $statement->execute();

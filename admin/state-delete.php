@@ -23,5 +23,5 @@ if(!isset($_REQUEST['id'])) {
 	$statement = $pdo->prepare("DELETE FROM tbl_country WHERE country_id=?");
 	$statement->execute(array($_REQUEST['id']));
 
-	header('location: country.php');
+	header('location: state.php');
 ?>

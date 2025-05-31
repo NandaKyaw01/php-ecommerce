@@ -32,10 +32,10 @@ if(isset($_POST['form1'])) {
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>Add Country</h1>
+		<h1>Add State</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="country.php" class="btn btn-primary btn-sm">View All</a>
+		<a href="state.php" class="btn btn-primary btn-sm">View All</a>
 	</div>
 </section>
 
@@ -66,7 +66,7 @@ if(isset($_POST['form1'])) {
 				<div class="box box-info">
 					<div class="box-body">
 						<div class="form-group">
-							<label for="" class="col-sm-2 control-label">Country Name <span>*</span></label>
+							<label for="" class="col-sm-2 control-label">State Name <span>*</span></label>
 							<div class="col-sm-4">
 								<input type="text" class="form-control" name="country_name">
 							</div>

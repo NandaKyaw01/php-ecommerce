@@ -2,10 +2,10 @@
 
 <section class="content-header">
 	<div class="content-header-left">
-		<h1>View Countries</h1>
+		<h1>View States</h1>
 	</div>
 	<div class="content-header-right">
-		<a href="country-add.php" class="btn btn-primary btn-sm">Add New</a>
+		<a href="state-add.php" class="btn btn-primary btn-sm">Add New</a>
 	</div>
 </section>
 
@@ -23,7 +23,7 @@
 			<thead>
 			    <tr>
 			        <th>SL</th>
-			        <th>Country Name</th>
+			        <th>State Name</th>
 			        <th>Action</th>
 			    </tr>
 			</thead>
@@ -40,8 +40,8 @@
 	                    <td><?php echo $i; ?></td>
 	                    <td><?php echo $row['country_name']; ?></td>
 	                    <td>
-	                        <a href="country-edit.php?id=<?php echo $row['country_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
-	                        <a href="#" class="btn btn-danger btn-xs" data-href="country-delete.php?id=<?php echo $row['country_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
+	                        <a href="state-edit.php?id=<?php echo $row['country_id']; ?>" class="btn btn-primary btn-xs">Edit</a>
+	                        <a href="#" class="btn btn-danger btn-xs" data-href="state-delete.php?id=<?php echo $row['country_id']; ?>" data-toggle="modal" data-target="#confirm-delete">Delete</a>
 	                    </td>
 	                </tr>
             		<?php
