@@ -18,7 +18,7 @@ $dbuser = 'root';
 $dbpass = '';
 
 // Defining base url
-define("BASE_URL", "http://localhost/PHP-MySQL-ecommerce-website/");
+define("BASE_URL", "http://localhost/shopnest/");
 
 // Getting Admin url
 define("ADMIN_URL", BASE_URL . "admin" . "/");
