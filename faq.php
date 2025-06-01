@@ -29,7 +29,7 @@ foreach ($result as $row) {
                     $result = $statement->fetchAll(PDO::FETCH_ASSOC);                            
                     foreach ($result as $row) {
                         ?>
-                        <div class="panel panel-default">
+                        <div class="panel panel-default" style="cursor:pointer;">
                             <div class="panel-heading accordion-toggle question-toggle collapsed" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question<?php echo $row['faq_id']; ?>">
                                 <h4 class="panel-title" style="font-size: 1.5rem;">
                                     မေးခွန်း: <?php echo $row['faq_title']; ?>

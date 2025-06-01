@@ -127,7 +127,7 @@ if (isset($_POST['form1'])) {
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for=""><?php echo LANG_VALUE_106; ?> *</label>
-                                <select name="cust_country" class="form-control">
+                                <select name="cust_country" class="form-control" style="padding-top:0;">
                                     <?php
                                     $statement = $pdo->prepare("SELECT * FROM tbl_country ORDER BY country_name ASC");
                                     $statement->execute();

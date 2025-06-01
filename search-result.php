@@ -159,10 +159,10 @@ foreach ($result as $row) {
                                         <div class="text">
                                             <h3><a href="product.php?id=<?php echo $row['p_id']; ?>"><?php echo $row['p_name']; ?></a></h3>
                                             <h4>
-                                                $<?php echo $row['p_current_price']; ?> 
+                                                MMK <?php echo $row['p_current_price']; ?> 
                                                 <?php if($row['p_old_price'] != ''): ?>
                                                 <del>
-                                                    $<?php echo $row['p_old_price']; ?>
+                                                    MMK <?php echo $row['p_old_price']; ?>
                                                 </del>
                                                 <?php endif; ?>
                                             </h4>
@@ -242,7 +242,7 @@ foreach ($result as $row) {
                                                     </div>
                                                 </div>
                                             <?php else: ?>
-                                                <p><a href="product.php?id=<?php echo $row['p_id']; ?>">Add to Cart</a></p>
+                                                <p><a href="product.php?id=<?php echo $row['p_id']; ?>">အသေးစိတ်ကြည့်မည်</a></p>
                                             <?php endif; ?>
                                         </div>
                                     </div>
